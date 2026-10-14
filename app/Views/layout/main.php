@@ -204,7 +204,7 @@
             <i class="bi bi-person-badge-fill"></i>
             <div>
                 <span class="d-block leading-tight">INFO-SISTEMA</span>
-                <small class="text-info fw-normal" style="font-size: 0.72rem;">2026-1S 6B</small>
+                <small class="text-info fw-normal" style="font-size: 0.72rem;">eysfwis</small>
             </div>
         </a>
 
@@ -333,7 +333,7 @@
         <footer>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <div>
-                    <strong>Sistema de Información 2026-1S 6B</strong> &copy; <?= date('Y') ?> | Gestión de Persona, Sexo, Dirección, Correo Electrónico y Estado Civil.
+                    <strong>Sistema de Información eysfwis</strong> &copy; <?= date('Y') ?> | Gestión de Persona, Sexo, Dirección, Correo Electrónico y Estado Civil.
                 </div>
                 <div>
                     <span class="badge bg-light text-secondary border">CodeIgniter 4 + MariaDB</span>

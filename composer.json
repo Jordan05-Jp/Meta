@@ -1,6 +1,6 @@
 {
-    "name": "codeigniter4/framework",
-    "description": "The CodeIgniter framework v4",
+    "name": "sigeca/eysfwis",
+    "description": "Sistema de Información eysfwis en CodeIgniter 4",
     "license": "MIT",
     "type": "project",
     "homepage": "https://codeigniter.com",

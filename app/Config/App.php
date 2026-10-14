@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost/2026-1S-6B/public/';
+    public string $baseURL = 'http://localhost/eysfwis/public/';
 
     /**
      * Constructor para auto-detección dinámica de dominio en la nube o local.

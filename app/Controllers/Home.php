@@ -30,7 +30,7 @@ class Home extends BaseController
         $stats = $this->personaModel->getDashboardStats();
 
         $data = [
-            'title'  => 'Panel Principal - Sistema de Información 2026-1S 6B',
+            'title'  => 'Panel Principal - Sistema de Información eysfwis',
             'module' => 'home',
             'stats'  => $stats,
         ];
