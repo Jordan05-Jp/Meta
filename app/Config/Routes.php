@@ -120,3 +120,50 @@ $routes->group('correo', static function ($routes) {
     $routes->post('update/(:num)', 'Correo::update/$1');
     $routes->match(['get', 'post'], 'delete/(:num)', 'Correo::delete/$1');
 });
+
+// --------------------------------------------------------------------
+// RUTAS API REST PARA LA APLICACIÓN EYSFLUIS / SISTEMA EYSFWIS
+// --------------------------------------------------------------------
+$routes->group('api', ['namespace' => 'App\Controllers\Api'], static function ($routes) {
+    // Manejo de CORS preflight
+    $routes->options('(:any)', 'PersonaController::options');
+    $routes->options('/', 'PersonaController::options');
+
+    // Catálogos
+    $routes->get('catalogos', 'PersonaController::catalogos');
+
+    // Personas CRUD
+    $routes->get('persona', 'PersonaController::index');
+    $routes->get('persona/(:num)', 'PersonaController::show/$1');
+    $routes->post('persona', 'PersonaController::create');
+    $routes->put('persona/(:num)', 'PersonaController::update/$1');
+    $routes->post('persona/(:num)', 'PersonaController::update/$1');
+    $routes->post('persona/update/(:num)', 'PersonaController::update/$1');
+    $routes->delete('persona/(:num)', 'PersonaController::delete/$1');
+
+    // Sexo CRUD API
+    $routes->get('sexo', 'SexoApiController::index');
+    $routes->get('sexo/(:num)', 'SexoApiController::show/$1');
+    $routes->post('sexo', 'SexoApiController::create');
+    $routes->put('sexo/(:num)', 'SexoApiController::update/$1');
+    $routes->post('sexo/(:num)', 'SexoApiController::update/$1');
+    $routes->delete('sexo/(:num)', 'SexoApiController::delete/$1');
+
+    // Estado Civil CRUD API
+    $routes->get('estadocivil', 'EstadoCivilApiController::index');
+    $routes->get('estadocivil/(:num)', 'EstadoCivilApiController::show/$1');
+    $routes->post('estadocivil', 'EstadoCivilApiController::create');
+    $routes->put('estadocivil/(:num)', 'EstadoCivilApiController::update/$1');
+    $routes->post('estadocivil/(:num)', 'EstadoCivilApiController::update/$1');
+    $routes->delete('estadocivil/(:num)', 'EstadoCivilApiController::delete/$1');
+
+    // Correo CRUD API
+    $routes->get('correo', 'CorreoApiController::index');
+    $routes->get('correo/(:num)', 'CorreoApiController::show/$1');
+    $routes->get('persona/(:num)/correos', 'CorreoApiController::index/$1');
+    $routes->post('correo', 'CorreoApiController::create');
+    $routes->put('correo/(:num)', 'CorreoApiController::update/$1');
+    $routes->post('correo/(:num)', 'CorreoApiController::update/$1');
+    $routes->delete('correo/(:num)', 'CorreoApiController::delete/$1');
+});
+

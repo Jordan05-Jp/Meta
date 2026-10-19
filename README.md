@@ -19,7 +19,7 @@ Sistema de información desarrollado con **CodeIgniter 4** y base de datos relac
 - `app/Models/`: Modelos de acceso a datos y reglas de validación.
 - `app/Views/`: Vistas de interfaz de usuario con Bootstrap y layout modular (`layout/main.php`).
 - `public/`: Punto de entrada web (`index.php`, assets CSS/JS).
-- `database.sql`: Script de exportación de la base de datos `db_2026_1s_6b`.
+- `database.sql`: Script de exportación de la base de datos `eysfwis`.
 
 ---
 
@@ -33,14 +33,14 @@ Sistema de información desarrollado con **CodeIgniter 4** y base de datos relac
 2. Configurar la conexión a la base de datos en `.env`:
    ```ini
    database.default.hostname = localhost
-   database.default.database = db_2026_1s_6b
+   database.default.database = eysfwis
    database.default.username = root
    database.default.password = PIWIIB1234
    ```
 
 3. Importar la estructura de la base de datos (si es una instalación nueva):
    ```bash
-   mysql -u root -p db_2026_1s_6b < database.sql
+   mysql -u root -p eysfwis < database.sql
    ```
 
 ---
